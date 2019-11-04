@@ -1,0 +1,9 @@
+
+paraview_add_plugin(%PLUGIN_NAME%
+  VERSION "1.0"
+  #UI_INTERFACES ${interfaces}
+  #SOURCES ${sources}
+  MODULES %MODULE_NAME%
+  MODULE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/%MODULE_NAME%/vtk.module"
+  SERVER_MANAGER_XML filters.xml
+  )

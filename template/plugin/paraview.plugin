@@ -1,0 +1,8 @@
+NAME
+  %PLUGIN_NAME%
+DESCRIPTION
+  This plugin provides ...
+REQUIRES_MODULES
+  VTK::CommonCore
+  VTK::IOCore
+  VTK::FiltersCore
