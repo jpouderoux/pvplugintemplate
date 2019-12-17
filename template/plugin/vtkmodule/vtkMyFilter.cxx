@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtk%FILTER_NAME%.cxx
+  Module:    %FILTER_NAME%.cxx
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -12,7 +12,7 @@
      PURPOSE.  See the above copyright notice for more information.
 
 =========================================================================*/
-#include "vtk%FILTER_NAME%.h"
+#include "%FILTER_NAME%.h"
 
 #include <vtkInformation.h>
 #include <vtkInformationVector.h>
@@ -21,20 +21,20 @@
 #include <vtkPolyData.h>
 #include <vtkStreamingDemandDrivenPipeline.h>
 
-vtkStandardNewMacro(vtk%FILTER_NAME%);
+vtkStandardNewMacro(%FILTER_NAME%);
 
 //----------------------------------------------------------------------------
-vtk%FILTER_NAME%::vtk%FILTER_NAME%()
+%FILTER_NAME%::%FILTER_NAME%()
 {
 }
 
 //----------------------------------------------------------------------------
-vtk%FILTER_NAME%::~vtk%FILTER_NAME%()
+%FILTER_NAME%::~%FILTER_NAME%()
 {
 }
 
 //----------------------------------------------------------------------------
-int vtk%FILTER_NAME%::RequestData(vtkInformation* vtkNotUsed(request),
+int %FILTER_NAME%::RequestData(vtkInformation* vtkNotUsed(request),
   vtkInformationVector** inputVector, vtkInformationVector* outputVector)
 {
   // get the info objects
@@ -45,7 +45,7 @@ int vtk%FILTER_NAME%::RequestData(vtkInformation* vtkNotUsed(request),
 }
 
 //----------------------------------------------------------------------------
-void vtk%FILTER_NAME%::PrintSelf(ostream& os, vtkIndent indent)
+void %FILTER_NAME%::PrintSelf(ostream& os, vtkIndent indent)
 {
   this->Superclass::PrintSelf(os, indent);
 }

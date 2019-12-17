@@ -5,5 +5,5 @@ paraview_add_plugin(%PLUGIN_NAME%
   #SOURCES ${sources}
   MODULES %MODULE_NAME%
   MODULE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/%MODULE_NAME%/vtk.module"
-  SERVER_MANAGER_XML filters.xml
+  SERVER_MANAGER_XML %PLUGIN_NAME%.xml
   )

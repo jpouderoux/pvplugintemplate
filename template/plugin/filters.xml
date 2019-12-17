@@ -1,7 +1,7 @@
 <ServerManagerConfiguration>
   <ProxyGroup name="sources">
     <SourceProxy name="%FILTER_NAME%"
-                 class="vtk%FILTER_NAME%">
+                 class="%FILTER_NAME%">
       <Documentation short_help="">
       </Documentation>
     </SourceProxy>

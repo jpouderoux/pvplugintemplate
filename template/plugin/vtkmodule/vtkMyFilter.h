@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtk%FILTER_NAME%.h
+  Module:    %FILTER_NAME%.h
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -13,37 +13,37 @@
 
 =========================================================================*/
 /**
- * @class   vtk%FILTER_NAME%
+ * @class   %FILTER_NAME%
  * @brief   copy oriented and scaled glyph geometry to every input point
   */
 
-#ifndef vtk%FILTER_NAME%_h
-#define vtk%FILTER_NAME%_h
+#ifndef %FILTER_NAME%_h
+#define %FILTER_NAME%_h
 
 #include "%MODULE_NAME%Module.h"
 
 #include <vtkPolyDataAlgorithm.h>
 
-class vtk%FILTER_NAME% : public vtkPolyDataAlgorithm
+class %FILTER_NAME% : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtk%FILTER_NAME%, vtkPolyDataAlgorithm);
+  vtkTypeMacro(%FILTER_NAME%, vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent) override;
 
   /**
    * Construct object.
    */
-  static vtk%FILTER_NAME%* New();
+  static %FILTER_NAME%* New();
 
 protected:
-  vtk%FILTER_NAME%();
-  ~vtk%FILTER_NAME%() override;
+  %FILTER_NAME%();
+  ~%FILTER_NAME%() override;
 
   int RequestData(vtkInformation*, vtkInformationVector**, vtkInformationVector*) override;
 
 private:
-  vtk%FILTER_NAME%(const vtk%FILTER_NAME%&) = delete;
-  void operator=(const vtk%FILTER_NAME%&) = delete;
+  %FILTER_NAME%(const %FILTER_NAME%&) = delete;
+  void operator=(const %FILTER_NAME%&) = delete;
 };
 
 #endif
